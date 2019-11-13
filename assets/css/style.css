@@ -1,1 +1,68 @@
+body{
+  margin: 1;
+  background-color: bisque
+}
+.title {
+  background-color: bisque;
+  border: 1px solid black;
+  height: 15vh;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.contents {
+  display: flex;
+  height: 85vh;
+}
+
+.stats{
+  width: 20%;
+  border: 1px solid black;
+  margin: 2% 0% 2% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.statsTitle{
+  text-align: center;
+  margin: 0% 0% 5% 0%;
+}
+.statsBox{
+  display: flex;
+  border: 1px solid black;
+  background-color: lightblue;
+  height: 11%;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 10% 1%;
+}
+.container{
+  width: 80%;
+  /* background-color: pink; */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 4% 2% .3%;
+}
+
+.row{
+  display: flex;
+  height: 100%;
+  /* background-color: lime; */
+  /* border: 1px solid blueviolet; */
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 3px;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border: 1px solid black;
+  margin: 0.5%;
+}
