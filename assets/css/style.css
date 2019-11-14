@@ -104,3 +104,27 @@ body{
 .front9 {
   background-image: url('../images/react-logo.png');
 }
+
+
+/* Modal Pop Up */
+.modalContainer{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: blue;
+  border: 1px solid black;
+  height: 150px;
+  width: 300px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.congratsText{
+  display: block;
+  text-align: center;
+}
+.restartClick{
+  display: block;
+  text-align: center;
+}
