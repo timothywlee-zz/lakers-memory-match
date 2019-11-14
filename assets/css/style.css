@@ -67,7 +67,7 @@ body{
 }
 .back {
   background-image: url('../images/lfz-card.jpg');
-  /* opacity: 0.5; */
+  opacity: 0.5;
 
 }
 .back, .front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9 {
