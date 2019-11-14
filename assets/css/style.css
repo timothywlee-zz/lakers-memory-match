@@ -116,7 +116,7 @@ body{
   border: 1px solid black;
   height: 150px;
   width: 300px;
-  /* display: flex;
+  /* display: flex; // how do i make the text get in the center without touching display? since .hidden makes display:none;
   flex-direction: column;
   justify-content: center; */
 }
