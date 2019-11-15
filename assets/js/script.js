@@ -3,7 +3,7 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var max_matches = 2;
+var max_matches = 4;
 var attempts = 0;
 var games_played = 0;
 // var ableToBeClicked = ;
@@ -11,7 +11,7 @@ var games_played = 0;
 function initializeApp () {
   $('.card').on('click',handleCardClick);
   $('.modalContainer').addClass('hidden');
-  // $('.restartClick').on('click',resetStats);
+  $('.restartClick').on('click',resetStats);
 }
 
 
@@ -50,7 +50,6 @@ function handleCardClick(event) {
       }
     if (matches === max_matches) {
       $('.modalContainer').removeClass('hidden');
-      games_played++;
    }
 }
 
@@ -68,15 +67,15 @@ function displayStats () {
   $('.accuracyNum').text((Math.round(accuracy*10)/10) +'%');
 }
 
-// function resetStats() {
-//   matches = 0;
-//   attempts = 0;
-//   games_played++;
-//   displayStats();
-//   $('.modalContainer').addClass('hidden');
-//   $('card').find('.back').removeClass('hidden');
-// }
+function resetStats() {
+  matches = 0;
+  attempts = 0;
+  games_played++;
+  displayStats();
+
+  $('.modalContainer').addClass('hidden');
+  $('.card').find('.back').removeClass('hidden');
+}
 
 
 /* ----------- Notes ------------- */
-/* 1.fix the bug ***  when you click on the same image four times --> wins! */
