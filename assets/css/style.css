@@ -77,31 +77,58 @@ body{
   height: 100%;
   width: 100%;
 }
-.front1 {
+.css-logo1 {
   background-image: url('../images/css-logo.png');
 }
-.front2 {
+.css-logo2 {
+  background-image: url('../images/css-logo.png');
+}
+.docker-logo1 {
   background-image: url('../images/docker-logo.jpg');
 }
-.front3 {
+.docker-logo2 {
+  background-image: url('../images/docker-logo.jpg');
+}
+.gitHub-logo1 {
   background-image: url('../images/gitHub-logo.png');
 }
-.front4 {
+.gitHub-logo2 {
+  background-image: url('../images/gitHub-logo.png');
+}
+.html-logo1 {
   background-image: url('../images/html-logo.png');
 }
-.front5 {
+.html-logo2 {
+  background-image: url('../images/html-logo.png');
+}
+.js-logo1 {
   background-image: url('../images/js-logo.png');
 }
-.front6 {
+.js-logo2 {
+  background-image: url('../images/js-logo.png');
+}
+.mysql-logo1 {
   background-image: url('../images/mysql-logo.jpg');
 }
-.front7 {
+.mysql-logo2 {
+  background-image: url('../images/mysql-logo.jpg');
+}
+.node-logo1 {
   background-image: url('../images/node-logo.png');
 }
-.front8 {
+.node-logo2 {
+  background-image: url('../images/node-logo.png');
+}
+.php-logo1 {
   background-image: url('../images/php-logo.jpeg');
 }
-.front9 {
+.php-logo2 {
+  background-image: url('../images/php-logo.jpeg');
+}
+.react-logo1 {
+  background-image: url('../images/react-logo.png');
+}
+.react-logo2 {
   background-image: url('../images/react-logo.png');
 }
 

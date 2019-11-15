@@ -94,13 +94,13 @@ function resetStats() {
 }
 
 
-function randomizeCards () {
-  var cards = [];
+// function randomizeCards () {
+//   var cards = [];
 
-  while() {
+//   while() {
 
 
-  }
-}
+//   }
+// }
 /* ----------- Notes ------------- */
 //random commit
