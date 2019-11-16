@@ -12,7 +12,7 @@ function initializeApp () {
     $('.modalContainer').addClass("hidden");
     randomizeCards();
     $('.card').on('click',handleCardClick);
-    $('.container').on('click','.card', handleCardClick);
+    // $('.container').on('click','.card', handleCardClick);
     $('.restartClick').on('click',resetStats);
 }
 
@@ -30,11 +30,13 @@ function randomizeCards() {
 
     var removeACardFromCardDeck = cardDeck.splice(randomIndex, 1);
 
-    var addCardToFront = createFront.addClass(removeACardFromCardDeck);
+    var addCardToFront = createFront.addClass(removeACardFromCardDeck); //what does this mean
 
-    createFront.appendTo(createCard);
-    createBack.appendTo(createCard);
-    createCard.appendTo('.container');
+    // createFront.appendTo(createCard);
+    // createBack.appendTo(createCard);
+    // createCard.appendTo('.container');
+
+    $('.container').append((createCard).append(createFront,createBack));
   }
 }
 
