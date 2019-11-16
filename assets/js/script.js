@@ -9,11 +9,9 @@ var games_played = 0;
 
 
 function initializeApp () {
-  debugger;
+    $('.modalContainer').addClass("hidden");
     $('.card').on('click',handleCardClick);
     $('.container').on('click','.card', handleCardClick);
-    $('.modalContainer').addClass("hidden");
-    console.log('***** THIS FUCKEN HAPPENED *********')
     $('.restartClick').on('click',resetStats);
     randomizeCards();
 }
@@ -86,7 +84,7 @@ function handleCardClick(event) {
     }
   }
     if (matches === max_matches) {
-      //  $('.modalContainer').removeClass('hidden');
+       $('.modalContainer').removeClass('hidden');
         console.log('this happened');
    }
 }
@@ -116,7 +114,7 @@ function resetStats() {
     } else {
       $('.accuracyNum').text('0%');
     }
-    // $('.modalContainer').addClass('hidden');
+    $('.modalContainer').addClass('hidden');
     $('.card').find('.back').removeClass('hidden');
 }
 
@@ -145,3 +143,7 @@ function resetStats() {
 
 
 //need to make .front and .back css
+
+
+//ToDo List
+//1. make cards reshuffle when you click remove class
