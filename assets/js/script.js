@@ -10,8 +10,10 @@ var games_played = 0;
 
 function initializeApp () {
     $('.card').on('click',handleCardClick);
+    //$('.container').on('click',.card,handleCardClick)
     $('.modalContainer').addClass('hidden');
     $('.restartClick').on('click',resetStats);
+    // randomizeCards();
 }
 
 function removeClickHandler (){
@@ -93,14 +95,35 @@ function resetStats() {
     $('.card').find('.back').removeClass('hidden');
 }
 
-
-// function randomizeCards () {
-//   var cards = [];
-
-//   while() {
+}
 
 
-//   }
-// }
-/* ----------- Notes ------------- */
-//random commit
+function randomizeCards () {
+    var cardDeck = ['.css-logo1','.css-logo2','.docker-logo1','.docker-logo2','.gitHub-log1','.gitHub-logo2',
+              '.html-logo1','.html-logo2','.js-logo1','.js-logo2','.mysql-logo1','.mysql-logo2',
+              '.node-logo1','.node-logo2','.php-logo1','php-logo2','.react-logo1','.react-logo2'];
+//test with 2 cards
+
+
+}
+/* ----------- Pseudocode ------------- */
+//1. array to store classes of the images
+//2. while (cardDeck.length>0),
+//var = $('<div>').addClass('card')
+//var j= $('<div>').addClass('front')
+//var = $('<div>').addClass('back')
+//var randomIndex = Math.random/floor( > cardDeck.length)
+//
+
+// var b = cardDeck.splice(randomIndex,1)
+// var = j.addClass(var b)
+
+//append variables that have() back + front ) to it's parent (card) --->  its parent ('.container')
+
+// on('click',child,function)
+
+//randomize front and back --> append to class 'card' --> append to class 'row'
+//while loop + splice()
+//
+
+//

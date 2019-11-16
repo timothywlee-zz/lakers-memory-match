@@ -39,22 +39,24 @@ body{
   align-items: center;
   margin: 1% 10% 1%;
 }
+
+/* flex /direction - wrap */
 .container{
   width: 80%;
   border: 1px solid black;
   display: flex;
-  flex-direction: column;
+  flex-direction: wrap;
   margin: 2% 4% 2% .3%;
 }
 
-.row{
+/* .row{
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
   margin: 0px;
   padding: 3px;
-}
+} */
 .card{
   width: 100%;
   height: 100%;
@@ -68,67 +70,46 @@ body{
 .back {
   background-image: url('../images/lfz-card.jpg');
   opacity: 0.5;
-
-}
-.back, .front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9 {
   position: absolute;
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
-.css-logo1 {
+
+.css-logo {
   background-image: url('../images/css-logo.png');
 }
-.css-logo2 {
-  background-image: url('../images/css-logo.png');
-}
-.docker-logo1 {
+
+.docker-logo {
   background-image: url('../images/docker-logo.jpg');
 }
-.docker-logo2 {
-  background-image: url('../images/docker-logo.jpg');
-}
-.gitHub-logo1 {
+
+.gitHub-logo {
   background-image: url('../images/gitHub-logo.png');
 }
-.gitHub-logo2 {
-  background-image: url('../images/gitHub-logo.png');
-}
-.html-logo1 {
+
+.html-logo {
   background-image: url('../images/html-logo.png');
 }
-.html-logo2 {
-  background-image: url('../images/html-logo.png');
-}
-.js-logo1 {
+
+.js-logo {
   background-image: url('../images/js-logo.png');
 }
-.js-logo2 {
-  background-image: url('../images/js-logo.png');
-}
-.mysql-logo1 {
+
+.mysql-logo {
   background-image: url('../images/mysql-logo.jpg');
 }
-.mysql-logo2 {
-  background-image: url('../images/mysql-logo.jpg');
-}
-.node-logo1 {
+
+.node-logo {
   background-image: url('../images/node-logo.png');
 }
-.node-logo2 {
-  background-image: url('../images/node-logo.png');
-}
-.php-logo1 {
+
+.php-logo {
   background-image: url('../images/php-logo.jpeg');
 }
-.php-logo2 {
-  background-image: url('../images/php-logo.jpeg');
-}
+
 .react-logo1 {
-  background-image: url('../images/react-logo.png');
-}
-.react-logo2 {
   background-image: url('../images/react-logo.png');
 }
 
@@ -143,9 +124,10 @@ body{
   border: 1px solid black;
   height: 150px;
   width: 300px;
-  /* display: flex; // how do i make the text get in the center without touching display? since .hidden makes display:none;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
+  text-align: center;
 }
 .congratsText{
   display: block;
