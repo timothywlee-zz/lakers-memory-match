@@ -118,7 +118,7 @@ function resetStats() { //runs a function that resets the game --> resets some o
       $('.modalContainer').addClass('hidden'); // after resetting the statistics, need to make the modal container reappear
       $('.card').find('.back').removeClass('hidden'); //targets the div with the class of 'card' and finds the class of 'back' and unhides the back.
 
-    randomizeCards();
+    randomizeCards(); //executes the this function to randomize the cards again
 }
 
 
