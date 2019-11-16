@@ -10,7 +10,7 @@ var games_played = 0;
 
 function initializeApp () {
     $('.card').on('click',handleCardClick);
-    //$('.container').on('click',.card,handleCardClick)
+    // $('.container').on('click',.card,handleCardClick)
     $('.modalContainer').addClass('hidden');
     $('.restartClick').on('click',resetStats);
     // randomizeCards();
@@ -99,31 +99,45 @@ function resetStats() {
 
 
 function randomizeCards () {
-    var cardDeck = ['.css-logo1','.css-logo2','.docker-logo1','.docker-logo2','.gitHub-log1','.gitHub-logo2',
-              '.html-logo1','.html-logo2','.js-logo1','.js-logo2','.mysql-logo1','.mysql-logo2',
-              '.node-logo1','.node-logo2','.php-logo1','php-logo2','.react-logo1','.react-logo2'];
-//test with 2 cards
+  var cardDeck = ['.css-logo', '.css-logo', '.docker-logo', '.docker-logo', '.gitHub-log', '.gitHub-log',
+                  '.html-logo', '.html-logo', '.js-logo', '.js-logo', '.mysql-logo', '.mysql-logo',
+                  '.node-logo', '.node-logo', 'php-logo', 'php-logo', '.react-logo', '.react-logo'];
 
+  while (cardDeck.length > 0) {
+
+    var createCard = $('<div>').addClass('card');
+    var createFront = $('<div>').addClass('front');
+    var createBack = $('<div>').addClass('back');
+
+    var randomIndex = Math.floor(Math.random() * cardDeck.length);
+
+    var removeACardFromCardDeck = cardDeck.splice(randomIndex,1);
+
+    var addCardToFront = createFront.addClass(removeACardFromCardDeck);
+
+
+    createBack.appendTo('.card');
+    createFront.appendTo('.card');
+    createCard.appendTo('.container');
+
+    cardDeck++
+  }
 
 }
 /* ----------- Pseudocode ------------- */
 //1. array to store classes of the images
+    //test with 2 cards
+
 //2. while (cardDeck.length>0),
-//var = $('<div>').addClass('card')
-//var j= $('<div>').addClass('front')
-//var = $('<div>').addClass('back')
+//var createCard = $('<div>').addClass('card')
+//var createFront = $('<div>').addClass('front')
+//var createBack = $('<div>').addClass('back')
 //var randomIndex = Math.random/floor( > cardDeck.length)
 //
 
 // var b = cardDeck.splice(randomIndex,1)
-// var = j.addClass(var b)
+// var = createFront.addClass(var b)
 
 //append variables that have() back + front ) to it's parent (card) --->  its parent ('.container')
 
-// on('click',child,function)
-
-//randomize front and back --> append to class 'card' --> append to class 'row'
-//while loop + splice()
-//
-
-//
+//cardDeck++;
