@@ -10,10 +10,10 @@ var games_played = 0;
 
 function initializeApp () {
     $('.modalContainer').addClass("hidden");
+    randomizeCards();
     $('.card').on('click',handleCardClick);
     $('.container').on('click','.card', handleCardClick);
     $('.restartClick').on('click',resetStats);
-    randomizeCards();
 }
 
 function randomizeCards() {
