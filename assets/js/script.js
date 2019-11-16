@@ -39,34 +39,34 @@ function randomizeCards() { //the function that executes code to shuffle the car
   }
 }
 
-function removeClickHandler (){ //
+function removeClickHandler (){ //turns off the function handleCardClick when a click is made on the card (*** used to fix the spamming issue caused within the timeout time **** )
     $(".card").off("click", handleCardClick)
 }
 
-function addClickHandler () {
+function addClickHandler () { //turns back on the function handleCardClick so you can click on other cards
     $(".card").on("click", handleCardClick)
 }
 
-function handleCardClick(event) {
-  if ($(event.currentTarget).find('.back').hasClass('hidden')) {
-    return;
-  }
+function handleCardClick(event) { //the function that handles multiple conditions when the user clicks on images
+  // if ($(event.currentTarget).find('.back').hasClass('hidden')) { //don't need this. solved the problem of spamming above^
+  //   return;
+  // }
 
-  $(event.currentTarget).find('.back').addClass('hidden');
+  $(event.currentTarget).find('.back').addClass('hidden'); //when the user clicks on a card with a class of 'back', hide the back of the card so the front can be revealed.
 
 
-  if (firstCardClicked === null) {
-      firstCardClicked = $(event.currentTarget);
-  } else {
-      secondCardClicked = $(event.currentTarget);
-      var firstChoice = $(firstCardClicked).find('.front').css('background-image');
-      var secondChoice = $(secondCardClicked).find('.front').css('background-image');
-      removeClickHandler();
+  if (firstCardClicked) { //a conditional that checks if the first is null or "empty"
+      firstCardClicked = $(event.currentTarget); //assign that specific 'first click' to the global variable firstCardClicked (firstCardClicked is no longer null)
+  } else { //if firstCardClicked is not null
+      secondCardClicked = $(event.currentTarget); //assign that specific 'second click' to the global variable secondCardClicked (secondCardClicked is no longer null)
+      var firstChoice = $(firstCardClicked).find('.front').css('background-image'); // where the 'first click' is now assigned with it's background img (assinged in the CSS) --> stored into a variable 'firstChoice'
+      var secondChoice = $(secondCardClicked).find('.front').css('background-image');// where the 'second click' is now assigned with it's background img(assinged in the CSS) --> stored into a variable 'secondChoice'
+      removeClickHandler(); //after the first and second card is clicked, this function is executed to prevent a 3rd click to occur
 
-    if (firstChoice === secondChoice) {
-        matches++;
-        attempts++;
-        console.log('The cards do match! :)');
+    if (firstChoice === secondChoice) { //a conditional that checks if the first and second clicks' images are the same
+        matches++; //if they are the same, increment current value in matches by 1
+        attempts++; //increment current value in attempts by 1
+        console.log('The cards do match! :)'); //
         firstCardClicked = null;
         secondCardClicked = null;
         addClickHandler();
