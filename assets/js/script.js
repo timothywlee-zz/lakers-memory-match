@@ -9,11 +9,35 @@ var games_played = 0;
 
 
 function initializeApp () {
+  debugger;
     $('.card').on('click',handleCardClick);
-    // $('.container').on('click',.card,handleCardClick)
-    $('.modalContainer').addClass('hidden');
+    $('.container').on('click','.card', handleCardClick);
+    $('.modalContainer').addClass("hidden");
+    console.log('***** THIS FUCKEN HAPPENED *********')
     $('.restartClick').on('click',resetStats);
-    // randomizeCards();
+    randomizeCards();
+}
+
+function randomizeCards() {
+  var cardDeck = ['css-logo', 'css-logo', 'docker-logo', 'docker-logo', 'gitHub-logo', 'gitHub-logo',
+                  'html-logo', 'html-logo', 'js-logo', 'js-logo', 'mysql-logo', 'mysql-logo',
+                  'node-logo', 'node-logo', 'php-logo', 'php-logo', 'react-logo', 'react-logo'];
+
+  while (cardDeck.length > 0) {
+    var createCard = $('<div>').addClass('card');
+    var createFront = $('<div>').addClass('front');
+    var createBack = $('<div>').addClass('back');
+
+    var randomIndex = Math.floor(Math.random() * cardDeck.length);
+
+    var removeACardFromCardDeck = cardDeck.splice(randomIndex, 1);
+
+    var addCardToFront = createFront.addClass(removeACardFromCardDeck);
+
+    createFront.appendTo(createCard);
+    createBack.appendTo(createCard);
+    createCard.appendTo('.container');
+  }
 }
 
 function removeClickHandler (){
@@ -62,7 +86,8 @@ function handleCardClick(event) {
     }
   }
     if (matches === max_matches) {
-       $('.modalContainer').removeClass('hidden');
+      //  $('.modalContainer').removeClass('hidden');
+        console.log('this happened');
    }
 }
 
@@ -91,39 +116,14 @@ function resetStats() {
     } else {
       $('.accuracyNum').text('0%');
     }
-    $('.modalContainer').addClass('hidden');
+    // $('.modalContainer').addClass('hidden');
     $('.card').find('.back').removeClass('hidden');
 }
 
-}
 
 
-function randomizeCards () {
-  var cardDeck = ['.css-logo', '.css-logo', '.docker-logo', '.docker-logo', '.gitHub-log', '.gitHub-log',
-                  '.html-logo', '.html-logo', '.js-logo', '.js-logo', '.mysql-logo', '.mysql-logo',
-                  '.node-logo', '.node-logo', 'php-logo', 'php-logo', '.react-logo', '.react-logo'];
-
-  while (cardDeck.length > 0) {
-
-    var createCard = $('<div>').addClass('card');
-    var createFront = $('<div>').addClass('front');
-    var createBack = $('<div>').addClass('back');
-
-    var randomIndex = Math.floor(Math.random() * cardDeck.length);
-
-    var removeACardFromCardDeck = cardDeck.splice(randomIndex,1);
-
-    var addCardToFront = createFront.addClass(removeACardFromCardDeck);
 
 
-    createBack.appendTo('.card');
-    createFront.appendTo('.card');
-    createCard.appendTo('.container');
-
-    cardDeck++
-  }
-
-}
 /* ----------- Pseudocode ------------- */
 //1. array to store classes of the images
     //test with 2 cards
@@ -141,3 +141,7 @@ function randomizeCards () {
 //append variables that have() back + front ) to it's parent (card) --->  its parent ('.container')
 
 //cardDeck++;
+
+
+
+//need to make .front and .back css

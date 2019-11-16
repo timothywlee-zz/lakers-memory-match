@@ -1,7 +1,12 @@
-body{
+body {
   margin: 1;
-  background-color: bisque
+  background-color: bisque;
 }
+
+.hidden {
+  display: none;
+}
+
 .title {
   background-color: bisque;
   border: 1px solid black;
@@ -40,36 +45,34 @@ body{
   margin: 1% 10% 1%;
 }
 
-/* flex /direction - wrap */
 .container{
   width: 80%;
   border: 1px solid black;
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 2% 4% 2% .3%;
 }
 
-/* .row{
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-  padding: 3px;
-} */
 .card{
-  width: 100%;
-  height: 100%;
+  width: 15%;
+  height: 31%;
   border: 1px solid black;
   margin: .5%;
   position: relative;
 }
-.hidden{
-  display: none;
-}
+
 .back {
   background-image: url('../images/lfz-card.jpg');
   opacity: 0.5;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.front {
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -109,10 +112,9 @@ body{
   background-image: url('../images/php-logo.jpeg');
 }
 
-.react-logo1 {
+.react-logo {
   background-image: url('../images/react-logo.png');
 }
-
 
 /* Modal Pop Up */
 .modalContainer{
@@ -134,6 +136,6 @@ body{
   text-align: center;
 }
 .restartClick{
-  display: block;
+  display: inline;
   text-align: center;
 }
