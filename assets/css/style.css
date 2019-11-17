@@ -46,25 +46,33 @@ body {
 }
 
 .container{
-  width: 80%;
+  width: 58%;
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 2% 4% 2% .3%;
+  margin: 2% 0% 2% 0%;
+}
+.rightContainer{
+  width: 20%;
+  border: 1px solid black;
+  margin: 2% 0% 2% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card{
   width: 15%;
-  height: 31%;
+  height: 32%;
   border: 1px solid black;
-  margin: .5%;
+  margin: auto;
   position: relative;
 }
 
 .back {
-  background-image: url('../images/lfz-card.jpg');
-  opacity: 0.5;
+  background-image: url('../images/lakers-logo.png');
+  /* opacity: 0.5; */
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -80,40 +88,32 @@ body {
   width: 100%;
 }
 
-.css-logo {
-  background-image: url('../images/css-logo.png');
+.a-davis {
+  background-image: url('../images/a-davis.png');
 }
-
-.docker-logo {
-  background-image: url('../images/docker-logo.jpg');
+.d-green {
+  background-image: url('../images/d-green.png');
 }
-
-.gitHub-logo {
-  background-image: url('../images/gitHub-logo.png');
+.d-howard {
+  background-image: url('../images/d-howard.png');
 }
-
-.html-logo {
-  background-image: url('../images/html-logo.png');
+.kcp {
+  background-image: url('../images/kcp.png');
 }
-
-.js-logo {
-  background-image: url('../images/js-logo.png');
+.kuz {
+  background-image: url('../images/kuz.png');
 }
-
-.mysql-logo {
-  background-image: url('../images/mysql-logo.jpg');
+.lebron {
+  background-image: url('../images/lebron.png');
 }
-
-.node-logo {
-  background-image: url('../images/node-logo.png');
+.mcgee {
+  background-image: url('../images/mcgee.png');
 }
-
-.php-logo {
-  background-image: url('../images/php-logo.jpeg');
+.rondo {
+  background-image: url('../images/rondo.png');
 }
-
-.react-logo {
-  background-image: url('../images/react-logo.png');
+.a-caruso {
+  background-image: url('../images/a-caruso.png');
 }
 
 /* Modal Pop Up */
@@ -138,7 +138,7 @@ body {
 .congratsText{
   display: block;
   text-align: center;
-  margin: 20% auto 0;
+  margin: 17% auto -35px;
 }
 .restartClick{
   display: inline;

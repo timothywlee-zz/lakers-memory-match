@@ -18,9 +18,9 @@ function initializeApp () { //the function handler that executes all the other f
 function randomizeCards() { //the function that executes code to shuffle the cards randomly
   $('.card').remove(); //removes the cards if there are any present <-- used to remove the cards when resetting the game
 
-  var cardDeck = ['css-logo', 'css-logo', 'docker-logo', 'docker-logo', 'gitHub-logo', 'gitHub-logo',
-                  'html-logo', 'html-logo', 'js-logo', 'js-logo', 'mysql-logo', 'mysql-logo',
-                  'node-logo', 'node-logo', 'php-logo', 'php-logo', 'react-logo', 'react-logo']; //an array that holds the images
+
+  var cardDeck = ['a-davis','a-davis','d-green','d-green','d-howard','d-howard','kcp','kcp','kuz','kuz',
+                  'lebron','lebron','mcgee','mcgee','rondo','rondo','a-caruso','a-caruso']; //an array that holds the images
 
   while (cardDeck.length > 0) { // execute this while-loop only when the cardDeck has a current value that is greater than 0.
     var createCard = $('<div>').addClass('card'); // makes a div per card made
@@ -50,9 +50,9 @@ function addClickHandler () { //turns back on the function handleCardClick so yo
 }
 
 function handleCardClick(event) { //the function that handles multiple conditions when the user clicks on images
-  // if ($(event.currentTarget).find('.back').hasClass('hidden')) { //don't need this. solved the problem of spamming above^
-  //   return;
-  // }
+  if ($(event.currentTarget).find('.back').hasClass('hidden')) { //prevents clicking on the same image 4 times --> resulting in a win
+    return;
+  }
 
   $(event.currentTarget).find('.back').addClass('hidden'); //when the user clicks on a card with a class of 'back', hide the back of the card so the front can be revealed.
 
@@ -119,6 +119,7 @@ function resetStats() { //runs a function that resets the game --> resets some o
       $('.card').find('.back').removeClass('hidden'); //targets the div with the class of 'card' and finds the class of 'back' and unhides the back.
 
     randomizeCards(); //executes the this function to randomize the cards again
+    addClickHandler(); //turns back on the function handleCardClick so you can click on other cards
 }
 
 
