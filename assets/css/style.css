@@ -75,7 +75,7 @@ body {
 
 .back {
   background-image: url('../images/lakers-logo.png');
-  /* opacity: 0.5; */
+  opacity: 0.5;
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -121,6 +121,8 @@ body {
 
 /* Modal Pop Up */
 .modalContainer{
+  background-image: url('../images/modal-img.png');
+  background-size: cover;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -140,10 +142,14 @@ body {
 }
 .congratsText{
   display: block;
+  font-weight: 900;
+  color: gold;
   text-align: center;
   margin: 17% auto -35px;
 }
 .restartClick{
   display: inline;
+  font-weight: 900;
+  color: gold;
   text-align: center;
 }
