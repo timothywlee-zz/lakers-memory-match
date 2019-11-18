@@ -31,7 +31,7 @@ function randomizeCards() { //the function that executes code to shuffle the car
 
     var removeACardFromCardDeck = cardDeck.splice(randomIndex, 1); //removes one random card from the cardDeck array
 
-    var addCardToFront = createFront.addClass(removeACardFromCardDeck); //where the single random card that was removed from the array is now added to the div with the class of front.
+    var addCardToFront = createFront.addClass(removeACardFromCardDeck); //where the single random card that was removed from the array --> added to the div with the class of front.
 
     // createFront.appendTo(createCard);
     // createBack.appendTo(createCard);

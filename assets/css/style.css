@@ -1,6 +1,7 @@
 body {
   margin: 1;
-  background-color: bisque;
+  background-image: url('../images/lakers-logo.jpg');
+  background-size: cover;
 }
 
 .hidden {
@@ -8,8 +9,8 @@ body {
 }
 
 .title {
-  background-color: bisque;
   border: 1px solid black;
+  color: gold;
   height: 15vh;
   font-size: 50px;
   font-weight: bold;
@@ -33,12 +34,14 @@ body {
 }
 .statsTitle{
   text-align: center;
+  color: gold;
+  font-size: 20px;
   margin: 0% 0% 5% 0%;
 }
 .statsBox{
   display: flex;
   border: 1px solid black;
-  background-color: lightblue;
+  background-color: gold;
   height: 11%;
   justify-content: center;
   align-items: center;
@@ -47,7 +50,7 @@ body {
 
 .container{
   width: 58%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
