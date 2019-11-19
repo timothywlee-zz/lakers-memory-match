@@ -1,5 +1,5 @@
 body {
-  margin: 1;
+  margin;
   background-image: url('../images/lakers-logo.jpg');
   background-size: cover;
 }
@@ -46,11 +46,12 @@ body {
   justify-content: center;
   align-items: center;
   margin: 1% 10% 1%;
+  border-radius: 20px ;
 }
 
 .container{
   width: 58%;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -75,7 +76,7 @@ body {
 
 .back {
   background-image: url('../images/lakers-logo.png');
-  opacity: 0.5;
+  /* opacity: 0.5; */
   position: absolute;
   background-size: cover;
   background-position: center;
