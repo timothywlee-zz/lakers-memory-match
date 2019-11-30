@@ -7,15 +7,15 @@ body {
 header,
 .container,
 .stats,
-.stats > *,
-.gameArea,
-.rightContainer{
+.statsBox,
+.statsBox > *,
+.gameArea {
   display: flex;
 }
 
 .stats,
-.stats > *,
-.rightContainer{
+.statsBox,
+.statsBox > * {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -23,75 +23,63 @@ header,
 
 .container,
 .stats,
-.rightContainer,
 .gameArea{
   height: 70vh;
 }
-
-.stats,
-.rightContainer{
-  width: 17.5vw;
+* {
+  box-sizing: border-box;
+  font-size: 20px;
 }
-
-.container,
-.gameArea,
-.bottomContainer{
-  width: 100%;
-}
-
-header,
-.bottomContainer{
-  height: 15vh;
-}
-
 header {
   background-color: blue;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  height: 10vh;
 }
 
 .container{
   background-color: yellow;
+  width: 100%;
 }
 
 .stats{
   background-color: red;
   border: 1px solid black;
+  width: 13%;
 }
 .stats > * {
   border: 1px solid black;
   height: 10%;
   width: 80%;
 }
+.statsBox{
+  text-align: center;
+}
 
 .gameArea{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.rightContainer{
-  background-color: green;
+  width: 87%;
 }
 
 .bottomContainer{
   background-color: pink;
+  height: 20vh;
 }
 
 .modalContainer{
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 30%;
+  left: 30%;
   background-color: white;
-  height: 30vh;
-  width: 20vh;
+  height: 50%;
+  width: 50%;
 }
 
 .card{
-  height: 30%;
-  width: 15%;
-  margin: auto;
+  height: 32%;
+  width: 16%;
   position: relative;
   background-color: black;
   border: 1px solid black;
@@ -141,4 +129,51 @@ header {
 
 .hidden{
   display: none;
+}
+
+
+/* ---- ipad 1,2,Mini, and Air ----- */
+@media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {
+
+  header{
+    display: none;
+  }
+  .stats,
+  .gameArea,
+  .bottomContainer{
+    width: 100%;
+  }
+  .container{
+    flex-direction: column;
+    height: 80vh;
+  }
+  .stats,
+  .gameArea{
+    flex-direction: row;
+  }
+  .stats{
+    height: 10vh;
+  }
+  .statsBox{
+    height: 100%;
+  }
+  .gameArea{
+    height: 70vh;
+  }
+  .bottomContainer{
+    height: 20vh;
+  }
+  /* .card{
+
+  } */
+}
+
+
+/* ------ iphone6, 6s, 7 and 8 ----- */
+@media only screen and (max-device-width: 414px) and (orientation: portrait),
+(max-device-width: 823px) and (orientation: landscape),
+(max-width: 950px) and (orientation: landscape) {
+    * {
+        font-size: 13px;
+    }
 }

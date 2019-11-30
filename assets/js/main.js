@@ -9,7 +9,6 @@ var games_played = 0;
 
 
 function initializeApp() {
-  $('.modalContainer').addClass('hidden');
   randomizeCards();
   addClickHandler();
   $('.resetClick').on('click',resetStats);
@@ -84,14 +83,14 @@ function handleCardClick(event) {
 }
 
 function calculateAccuracy() {
-  return (matches/attempts)*100;
+  return Math.round(((matches/attempts) * 100) *10/10) + '%';
 }
 
 function displayStats() {
   var accuracy = calculateAccuracy();
   $('.gamesPlayedCount').text(games_played);
   $('.attemptsCount').text(attempts);
-  $('.accuracyCount').text((Math.round(accuracy*10)/10) + '%');
+  $('.accuracyCount').text(accuracy);
 }
 
 function resetStats(){
@@ -106,8 +105,8 @@ function resetStats(){
     $('.accuracyCount').text('0%');
   }
 
-  $('.modalContainer').addClass('hidden');
   $('.card').find('.card-back').removeClass('hidden');
+  $('.modalContainer').addClass('hidden');
   randomizeCards();
   addClickHandler();
 }

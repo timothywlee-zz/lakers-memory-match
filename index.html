@@ -10,21 +10,34 @@
     <title> Memory Match Project </title>
 </head>
 <body>
-    <header> Match The Players </header>
+    <header> Lakers vs Clippers </header>
     <div class='container'>
         <aside class='stats'>
-            <div> Games Played </div>
-            <div class='gamesPlayedCount'> 0 </div>
-            <div> Attempts </div>
-            <div class='attemptsCount'> 0 </div>
-            <div> Accuracy </div>
-            <div class='accuracyCount'> 0% </div>
+            <div class='statsBox'>
+                <div> Games Played </div>
+                <div class='gamesPlayedCount'> 0 </div>
+            </div>
+            <div class='statsBox'>
+                <div> Attempts </div>
+                <div class='attemptsCount'> 0 </div>
+            </div>
+            <div class='statsBox'>
+                <div> Accuracy </div>
+                <div class='accuracyCount'> 0% </div>
+            </div>
+            <div class='statsBox'>
+                <div> Lakers </div>
+                <div class='lakersCount'> 0 </div>
+            </div>
+            <div class='statsBox'>
+                <div> Clippers </div>
+                <div class='clippersCount'> 0 </div>
+            </div>
         </aside>
         <main class='gameArea'></main>
-        <div class='rightContainer'></div>
     </div>
     <div class='bottomContainer'></div>
-    <div class='modalContainer'>
+    <div class='modalContainer hidden'>
         <div class='winText'>Congratulations! You Won!</div>
         <div class='resetClick'>Play Again</div>
     </div>
