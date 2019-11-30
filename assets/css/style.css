@@ -1,95 +1,118 @@
+
 body {
-  margin;
-  background-image: url('../images/lakers-logo.jpg');
-  background-size: cover;
-}
-
-.hidden {
-  display: none;
-}
-
-.title {
-  border: 1px solid black;
-  color: gold;
-  height: 15vh;
-  font-size: 50px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contents {
-  display: flex;
-  height: 85vh;
-}
-
-.stats{
-  width: 20%;
-  border: 1px solid black;
-  margin: 2% 0% 2% 0%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.statsTitle{
-  text-align: center;
-  color: gold;
-  font-size: 20px;
-  margin: 0% 0% 5% 0%;
-}
-.statsBox{
-  display: flex;
-  border: 1px solid black;
-  background-color: gold;
-  height: 11%;
-  justify-content: center;
-  align-items: center;
-  margin: 1% 10% 1%;
-  border-radius: 20px ;
-}
-
-.container{
-  width: 58%;
-  border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 2% 0% 2% 1%;
-}
-.rightContainer{
-  width: 20%;
-  border: 1px solid black;
-  margin: 2% 0% 2% 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.card{
-  width: 15%;
-  height: 32%;
-  border: 1px solid black;
   margin: auto;
+  overflow: hidden;
   position: relative;
 }
 
-.back {
-  background-image: url('../images/lakers-logo.png');
-  /* opacity: 0.5; */
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+header,
+.container,
+.stats,
+.stats > *,
+.gameArea,
+.rightContainer{
+  display: flex;
+}
+
+.stats,
+.stats > *,
+.rightContainer{
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container,
+.stats,
+.rightContainer,
+.gameArea{
+  height: 70vh;
+}
+
+.stats,
+.rightContainer{
+  width: 17.5vw;
+}
+
+.container,
+.gameArea,
+.bottomContainer{
   width: 100%;
 }
 
-.front {
+header,
+.bottomContainer{
+  height: 15vh;
+}
+
+header {
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.container{
+  background-color: yellow;
+}
+
+.stats{
+  background-color: red;
+  border: 1px solid black;
+}
+.stats > * {
+  border: 1px solid black;
+  height: 10%;
+  width: 80%;
+}
+
+.gameArea{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rightContainer{
+  background-color: green;
+}
+
+.bottomContainer{
+  background-color: pink;
+}
+
+.modalContainer{
   position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: white;
+  height: 30vh;
+  width: 20vh;
+}
+
+.card{
+  height: 30%;
+  width: 15%;
+  margin: auto;
+  position: relative;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.card-front,
+.card-back{
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
+  position: absolute;
+}
+
+.card-back{
+  background-image: url('../images/lakers-logo.png');
+  opacity: 0.5;
+}
+.card-front{
+  background-image: url('../images/a-davis.png');
 }
 
 .a-davis {
@@ -120,37 +143,6 @@ body {
   background-image: url('../images/a-caruso.png');
 }
 
-/* Modal Pop Up */
-.modalContainer{
-  background-image: url('../images/modal-img.png');
-  background-size: cover;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  background-color: blue;
-  border: 1px solid black;
-  height: 150px;
-  width: 300px;
-}
-.innerContainer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-}
-.congratsText{
-  display: block;
-  font-weight: 900;
-  color: gold;
-  text-align: center;
-  margin: 17% auto -35px;
-}
-.restartClick{
-  display: inline;
-  font-weight: 900;
-  color: gold;
-  text-align: center;
+.hidden{
+  display: none;
 }

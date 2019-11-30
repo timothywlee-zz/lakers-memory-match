@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-        <link rel='stylesheet' href='./assets/css/style.css'>
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-        <script src='./assets/js/script.js'></script>
-        <title> Lakers Memory Match Game </title>
-  </head>
-  <body>
-      <header class='title'> Match The Players </header>
-      <div class='contents'>
-            <aside class='stats'>
-                    <div class='statsTitle'> Statistics </div>
-                    <div class='statsBox'> Games Played </div>
-                    <div class='gamesPlayedNum statsBox'> 0 </div>
-                    <div class='statsBox'> Attempts </div>
-                    <div class='attemptsNum statsBox'> 0 </div>
-                    <div class='statsBox'> Accuracy </div>
-                    <div class='accuracyNum statsBox'> 0% </div>
-            </aside>
-            <main class='container'></main>
-            <div class='rightContainer'>
-                <div class='box1'></div>
-                <div class='box2'></div>
-            </div>
-      </div>
-      <div class='modalContainer'>
-          <div class='innerContainer'>
-              <div class='congratsText'> YOU WON! CONGRATULATIONS </div>
-              <div class='restartClick'> Play Again </div>
-          </div>
-      </div>
-  </body>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='stylesheet' href='./assets/css/style.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='./assets/js/main.js'></script>
+    <title> Memory Match Project </title>
+</head>
+<body>
+    <header> Match The Players </header>
+    <div class='container'>
+        <aside class='stats'>
+            <div> Games Played </div>
+            <div class='gamesPlayedCount'> 0 </div>
+            <div> Attempts </div>
+            <div class='attemptsCount'> 0 </div>
+            <div> Accuracy </div>
+            <div class='accuracyCount'> 0% </div>
+        </aside>
+        <main class='gameArea'></main>
+        <div class='rightContainer'></div>
+    </div>
+    <div class='bottomContainer'></div>
+    <div class='modalContainer'>
+        <div class='winText'>Congratulations! You Won!</div>
+        <div class='resetClick'>Play Again</div>
+    </div>
+</body>
 </html>
