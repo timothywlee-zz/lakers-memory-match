@@ -170,10 +170,6 @@ header {
   background-image: url('../images/head-caruso.jpeg');
 }
 
-.hidden{
-  display: none;
-}
-
 .resetClick{
   transition: transform 0.5s;
   transition-timing-function: ease-out;
@@ -189,6 +185,53 @@ header {
   cursor: pointer;
   transform: scale(1.10);
 }
+
+.beginningModal {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://media.giphy.com/media/26ufm9YcCl3Cb7dwk/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.textBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.begModalText{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+.begModalPlay{
+  color: white;
+  text-align: center;
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  transform: translateY(0);
+  animation: .5s linear .25s infinite alternate grow;
+}
+
+.begModalPlay:hover {
+  cursor: pointer;
+  transform: scale(1.20);
+}
+
+@keyframes grow {
+  from { opacity: 1;}
+  to { opacity: .5;}
+}
+
+.hidden{
+  display: none;
+}
+
+
 
 /* ---- ipad 1,2,Mini, and Air ----- */
 /* @media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {

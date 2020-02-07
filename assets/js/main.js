@@ -9,9 +9,14 @@ var games_played = 0;
 
 
 function initializeApp() {
+  $('.begModalPlay').on('click', startBeginningModal);
   randomizeCards();
   addClickHandler();
   $('.resetClick').on('click',resetStats);
+}
+
+function startBeginningModal () {
+  $('.beginningModal').addClass('hidden');
 }
 
 function addClickHandler() {
