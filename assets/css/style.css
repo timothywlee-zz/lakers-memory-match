@@ -98,6 +98,26 @@ header {
   background-color: black;
   border: 1px solid black;
   border-radius: 6%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.card.clicked:hover {
+  cursor: initial;
+  transform: scale(1) rotateY(180deg);
+}
+
+.card-front{
+  transform: rotateY(-180deg);
+}
+
+.clicked{
+  transform: scale(1) rotateY(180deg);
 }
 
 .card-front,
@@ -108,6 +128,7 @@ header {
   width: 100%;
   position: absolute;
   border-radius: 5%;
+  backface-visibility: hidden;
 }
 
 .card-back{
