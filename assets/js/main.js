@@ -3,7 +3,7 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
-var max_matches = 2;
+var max_matches = 1;
 var attempts = 0;
 var games_played = 0;
 
@@ -47,8 +47,6 @@ function handleCardClick(event) {
   if ($(event.currentTarget).hasClass('clicked')) {
     return;
   }
-
-  // $(event.currentTarget).addClass('hidden');
 
   if(firstCardClicked === null) {
     firstCardClicked = $(event.currentTarget).addClass('clicked');

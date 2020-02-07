@@ -83,12 +83,17 @@ header {
 }
 
 .modalContainer{
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  background-color: white;
-  height: 50%;
-  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 400px;
+  width: 600px;
+  background-image: url(https://media.giphy.com/media/26vIfKDKOw34lHRks/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #c09d3b;
 }
 
 .card{
@@ -169,6 +174,21 @@ header {
   display: none;
 }
 
+.resetClick{
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  transform: translateY(0);
+  text-align: center;
+  color: #fdba21;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+
+.resetClick:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+}
 
 /* ---- ipad 1,2,Mini, and Air ----- */
 /* @media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {
