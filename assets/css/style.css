@@ -1,12 +1,10 @@
 body {
-  margin: auto;
-  overflow: hidden;
-  position: relative;
   background-image: url('../images/background-image.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container,
@@ -46,16 +44,13 @@ header {
 
 .container{
   width: 100%;
-  /* border: 1px solid black; */
 }
 
 .stats{
-  /* border: 1px solid black; */
   width: 20%;
 }
 
 .stats > * {
-  /* border: 1px solid black; */
   height: 15%;
   width: 80%;
 }
@@ -140,7 +135,6 @@ header {
 .card-back{
   background-image: url('../images/basketball.jpeg');
   border-radius: 4%;
-  /* opacity: 0.5; */
 }
 
 .a-davis {
@@ -233,47 +227,117 @@ header {
 }
 
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
-/* ---- ipad 1,2,Mini, and Air ----- */
-/* @media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {
-
-  header{
-    display: none;
-  }
-  .stats,
-  .gameArea,
-  .bottomContainer{
-    width: 100%;
-  }
-  .container{
-    flex-direction: column;
-    height: 80vh;
-  }
-  .stats,
-  .gameArea{
-    flex-direction: row;
-  }
-  .stats{
-    height: 10vh;
-  }
-  .statsBox{
-    height: 100%;
-  }
-  .gameArea{
-    height: 70vh;
-  }
-  .bottomContainer{
-    height: 20vh;
-  }
-
-} */
-
-
-/* ------ iphone6, 6s, 7 and 8 ----- */
-/* @media only screen and (max-device-width: 414px) and (orientation: portrait),
-(max-device-width: 823px) and (orientation: landscape),
-(max-width: 950px) and (orientation: landscape) {
-    * {
-        font-size: 13px;
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    body{
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-size: auto;
     }
-} */
+    header{
+      display: none;
+    }
+    .stats,
+    .gameArea {
+      width: 100%;
+    }
+    .container{
+      flex-direction: column;
+      height: 80vh;
+    }
+    .stats,
+    .gameArea{
+      flex-direction: row;
+    }
+    .stats{
+      height: 20vh;
+    }
+    .statsBox{
+      height: 100%;
+    }
+    .gameArea{
+      height: 80vh;
+    }
+    .text{
+      font-size: 24px;
+    }
+    .number{
+      font-size: 30px;
+    }
+    .begModalText{
+      font-size: 30px;
+    }
+    .card-back{
+      background-image: url('../images/basketball.jpeg');
+      background-repeat: no-repeat;
+      border-radius: 4%;
+      background-size: 100px 100px;
+    }
+    .a-davis {
+      background-image: url('../images/head-AD.jpeg');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .d-green {
+      background-image: url('../images/head-green.jpeg');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .d-howard {
+      background-image: url('../images/head-dwight.png');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .kcp {
+      background-image: url('../images/head-kcp.png');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .kuz {
+      background-image: url('../images/head-kuz.jpeg');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .lebron {
+      background-image: url('../images/head-lebron.jpeg');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .mcgee {
+      background-image: url('../images/head-McGEE.png');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .rondo {
+      background-image: url('../images/head-rondo.png');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+    .a-caruso {
+      background-image: url('../images/head-caruso.jpeg');
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    body {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-size: auto;
+    }
+    .lakersLogo {
+      width: 60%;
+    }
+    .text{
+      font-size: 20px;
+    }
+    .number{
+      font-size: 20px;
+    }
+}
