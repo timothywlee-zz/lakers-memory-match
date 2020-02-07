@@ -2,15 +2,18 @@ body {
   margin: auto;
   overflow: hidden;
   position: relative;
+  background-image: url('../images/background-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
-header,
 .container,
 .stats,
 .statsBox,
 .statsBox > *,
-.gameArea,
-.bottomContainer{
+.gameArea{
   display: flex;
 }
 
@@ -25,51 +28,58 @@ header,
 .container,
 .stats,
 .gameArea{
-  height: 65vh;
+  height: 87vh;
 }
 * {
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 40px;
 }
+
+
 header {
-  background-color: blue;
+  display: flex;
+  height: 13vh;
   justify-content: center;
   align-items: center;
-  height: 10vh;
 }
 
 .container{
-  background-color: yellow;
   width: 100%;
+  /* border: 1px solid black; */
 }
 
 .stats{
-  background-color: red;
-  border: 1px solid black;
-  width: 13%;
+  /* border: 1px solid black; */
+  width: 20%;
 }
+
 .stats > * {
-  border: 1px solid black;
-  height: 10%;
+  /* border: 1px solid black; */
+  height: 15%;
   width: 80%;
 }
+
 .statsBox{
   text-align: center;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.text {
+  color: #552583;
+}
+
+.number{
+  color: #fdba21;
+  opacity: 70%;
 }
 
 .gameArea{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 87%;
-}
-
-.bottomContainer{
-  background-color: black;
-  height: 25vh;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 80%;
+  padding: 2% 2%;
 }
 
 .modalContainer{
@@ -87,6 +97,7 @@ header {
   position: relative;
   background-color: black;
   border: 1px solid black;
+  border-radius: 6%;
 }
 
 .card-front,
@@ -96,10 +107,12 @@ header {
   height: 100%;
   width: 100%;
   position: absolute;
+  border-radius: 5%;
 }
 
 .card-back{
-  background-image: url('../images/lakers-logo.png');
+  background-image: url('../images/basketball.jpeg');
+  border-radius: 4%;
   /* opacity: 0.5; */
 }
 
@@ -131,54 +144,13 @@ header {
   background-image: url('../images/head-caruso.jpeg');
 }
 
-/* ----- players in bottomContainer ------ */
-.player1,
-.player2,
-.player3,
-.player4,
-.player5,
-.player6,
-.player7,
-.player8{
-  height: 100%;
-  width: 10%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.player1 {
-  background-image: url('../images/BC-caruso.png')
-}
-.player2{
-  background-image: url('../images/BC-rondo.png')
-}
-.player3{
-  background-image: url('../images/BC-kuz.png')
-}
-.player4{
-  background-image: url('../images/BC-lebron.png');
-}
-.player5{
-  background-image: url('../images/BC-AD.png');
-}
-.player6{
-  background-image: url('../images/BC-kcp.png')
-}
-.player7{
-  background-image: url('../images/BC-McGEE.png')
-}
-.player8{
-  background-image: url('../images/BC-green.png')
-}
-
-
 .hidden{
   display: none;
 }
 
 
 /* ---- ipad 1,2,Mini, and Air ----- */
-@media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {
+/* @media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {
 
   header{
     display: none;
@@ -208,17 +180,15 @@ header {
   .bottomContainer{
     height: 20vh;
   }
-  /* .card{
 
-  } */
-}
+} */
 
 
 /* ------ iphone6, 6s, 7 and 8 ----- */
-@media only screen and (max-device-width: 414px) and (orientation: portrait),
+/* @media only screen and (max-device-width: 414px) and (orientation: portrait),
 (max-device-width: 823px) and (orientation: landscape),
 (max-width: 950px) and (orientation: landscape) {
     * {
         font-size: 13px;
     }
-}
+} */
