@@ -455,3 +455,123 @@ header {
       font-size: 17px;
     }
 }
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    body{
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-size: auto;
+    }
+    header{
+      display: none;
+    }
+    .stats,
+    .gameArea {
+      width: 100%;
+    }
+    .container{
+      flex-direction: column;
+      height: 80vh;
+    }
+    .stats,
+    .gameArea{
+      flex-direction: row;
+    }
+    .stats{
+      height: 20vh;
+    }
+    .statsBox{
+      height: 100%;
+    }
+    .gameArea{
+      height: 80vh;
+    }
+    .text{
+      font-size: 50px;
+    }
+    .number{
+      font-size: 60px;
+    }
+    .begModalText{
+      font-size: 40px;
+    }
+    .card-back{
+      background-image: url('../images/basketball.jpeg');
+      background-repeat: no-repeat;
+      border-radius: 4%;
+      background-size: 200px 175px;
+    }
+    .a-davis {
+      background-image: url('../images/head-AD.jpeg');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .d-green {
+      background-image: url('../images/head-green.jpeg');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .d-howard {
+      background-image: url('../images/head-dwight.png');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .kcp {
+      background-image: url('../images/head-kcp.png');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .kuz {
+      background-image: url('../images/head-kuz.jpeg');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .lebron {
+      background-image: url('../images/head-lebron.jpeg');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .mcgee {
+      background-image: url('../images/head-McGEE.png');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .rondo {
+      background-image: url('../images/head-rondo.png');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+    .a-caruso {
+      background-image: url('../images/head-caruso.jpeg');
+      background-size: 200px 175px;
+      background-repeat: no-repeat;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-size: auto;
+    }
+    .lakersLogo {
+      width: 80%;
+    }
+    .text{
+      font-size: 30px;
+    }
+    .number{
+      font-size: 35px;
+    }
+    .card-back{
+      background-image: url('../images/basketball.jpeg');
+      background-repeat: no-repeat;
+      border-radius: 5%;
+      background-size: 200px 175px;
+    }
+}
