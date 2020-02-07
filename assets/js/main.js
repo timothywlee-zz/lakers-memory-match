@@ -44,16 +44,16 @@ function randomizeCards() {
 
 function handleCardClick(event) {
 
-  if ($(event.currentTarget).find('.card-back').hasClass('hidden')) {
+  if ($(event.currentTarget).hasClass('clicked')) {
     return;
   }
 
-  $(event.currentTarget).find('.card-back').addClass('hidden');
+  // $(event.currentTarget).addClass('hidden');
 
   if(firstCardClicked === null) {
-    firstCardClicked = $(event.currentTarget);
+    firstCardClicked = $(event.currentTarget).addClass('clicked');
   } else {
-    secondCardClicked = $(event.currentTarget);
+    secondCardClicked = $(event.currentTarget).addClass('clicked');
     var firstPick = $(firstCardClicked).find('.card-front').css('background-image');
     var secondPick = $(secondCardClicked).find('.card-front').css('background-image');
     removeClickHandler();
@@ -68,8 +68,8 @@ function handleCardClick(event) {
     } else {
       attempts++;
       setTimeout(function(){
-        $(firstCardClicked).find('.card-back').removeClass('hidden');
-        $(secondCardClicked).find('.card-back').removeClass('hidden');
+        $(firstCardClicked).removeClass('clicked');
+        $(secondCardClicked).removeClass('clicked');
         firstCardClicked = null;
         secondCardClicked = null;
         addClickHandler();
