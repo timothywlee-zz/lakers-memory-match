@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/background-image.png');
+  background-image: url('./images/background-image.png');
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -58,7 +58,6 @@ header {
 .statsBox{
   text-align: center;
   border-radius: 15px;
-  border: 3px solid black;
 }
 
 .text {
@@ -133,36 +132,36 @@ header {
 }
 
 .card-back{
-  background-image: url('../images/basketball.jpeg');
+  background-image: url('./images/basketball.jpeg');
   border-radius: 4%;
 }
 
 .a-davis {
-  background-image: url('../images/head-AD.jpeg');
+  background-image: url('./images/head-AD.jpeg');
 }
 .d-green {
-  background-image: url('../images/head-green.jpeg');
+  background-image: url('./images/head-green.jpeg');
 }
 .d-howard {
-  background-image: url('../images/head-dwight.png');
+  background-image: url('./images/head-dwight.png');
 }
 .kcp {
-  background-image: url('../images/head-kcp.png');
+  background-image: url('./images/head-kcp.png');
 }
 .kuz {
-  background-image: url('../images/head-kuz.jpeg');
+  background-image: url('./images/head-kuz.jpeg');
 }
 .lebron {
-  background-image: url('../images/head-lebron.jpeg');
+  background-image: url('./images/head-lebron.jpeg');
 }
 .mcgee {
-  background-image: url('../images/head-McGEE.png');
+  background-image: url('./images/head-McGEE.png');
 }
 .rondo {
-  background-image: url('../images/head-rondo.png');
+  background-image: url('./images/head-rondo.png');
 }
 .a-caruso {
-  background-image: url('../images/head-caruso.jpeg');
+  background-image: url('./images/head-caruso.jpeg');
 }
 
 .resetClick{
@@ -267,53 +266,53 @@ header {
       font-size: 30px;
     }
     .card-back{
-      background-image: url('../images/basketball.jpeg');
+      background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
       background-size: 100px 100px;
     }
     .a-davis {
-      background-image: url('../images/head-AD.jpeg');
+      background-image: url('./images/head-AD.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .d-green {
-      background-image: url('../images/head-green.jpeg');
+      background-image: url('./images/head-green.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .d-howard {
-      background-image: url('../images/head-dwight.png');
+      background-image: url('./images/head-dwight.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .kcp {
-      background-image: url('../images/head-kcp.png');
+      background-image: url('./images/head-kcp.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .kuz {
-      background-image: url('../images/head-kuz.jpeg');
+      background-image: url('./images/head-kuz.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .lebron {
-      background-image: url('../images/head-lebron.jpeg');
+      background-image: url('./images/head-lebron.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .mcgee {
-      background-image: url('../images/head-McGEE.png');
+      background-image: url('./images/head-McGEE.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .rondo {
-      background-image: url('../images/head-rondo.png');
+      background-image: url('./images/head-rondo.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .a-caruso {
-      background-image: url('../images/head-caruso.jpeg');
+      background-image: url('./images/head-caruso.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
@@ -378,53 +377,53 @@ header {
       font-size: 40px;
     }
     .card-back{
-      background-image: url('../images/basketball.jpeg');
+      background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
       background-size: 100px 100px;
     }
     .a-davis {
-      background-image: url('../images/head-AD.jpeg');
+      background-image: url('./images/head-AD.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .d-green {
-      background-image: url('../images/head-green.jpeg');
+      background-image: url('./images/head-green.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .d-howard {
-      background-image: url('../images/head-dwight.png');
+      background-image: url('./images/head-dwight.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .kcp {
-      background-image: url('../images/head-kcp.png');
+      background-image: url('./images/head-kcp.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .kuz {
-      background-image: url('../images/head-kuz.jpeg');
+      background-image: url('./images/head-kuz.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .lebron {
-      background-image: url('../images/head-lebron.jpeg');
+      background-image: url('./images/head-lebron.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .mcgee {
-      background-image: url('../images/head-McGEE.png');
+      background-image: url('./images/head-McGEE.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .rondo {
-      background-image: url('../images/head-rondo.png');
+      background-image: url('./images/head-rondo.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .a-caruso {
-      background-image: url('../images/head-caruso.jpeg');
+      background-image: url('./images/head-caruso.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
@@ -490,53 +489,53 @@ header {
       font-size: 40px;
     }
     .card-back{
-      background-image: url('../images/basketball.jpeg');
+      background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
       background-size: 200px 175px;
     }
     .a-davis {
-      background-image: url('../images/head-AD.jpeg');
+      background-image: url('./images/head-AD.jpeg');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .d-green {
-      background-image: url('../images/head-green.jpeg');
+      background-image: url('./images/head-green.jpeg');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .d-howard {
-      background-image: url('../images/head-dwight.png');
+      background-image: url('./images/head-dwight.png');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .kcp {
-      background-image: url('../images/head-kcp.png');
+      background-image: url('./images/head-kcp.png');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .kuz {
-      background-image: url('../images/head-kuz.jpeg');
+      background-image: url('./images/head-kuz.jpeg');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .lebron {
-      background-image: url('../images/head-lebron.jpeg');
+      background-image: url('./images/head-lebron.jpeg');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .mcgee {
-      background-image: url('../images/head-McGEE.png');
+      background-image: url('./images/head-McGEE.png');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .rondo {
-      background-image: url('../images/head-rondo.png');
+      background-image: url('./images/head-rondo.png');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
     .a-caruso {
-      background-image: url('../images/head-caruso.jpeg');
+      background-image: url('./images/head-caruso.jpeg');
       background-size: 200px 175px;
       background-repeat: no-repeat;
     }
@@ -559,10 +558,10 @@ header {
       font-size: 35px;
     }
     .card-back{
-      background-image: url('../images/basketball.jpeg');
+      background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 5%;
-      background-size: 200px 175px;
+      background-size: 150px 100px;
     }
 }
 
@@ -607,53 +606,53 @@ header {
       font-size: 40px;
     }
     .card-back{
-      background-image: url('../images/basketball.jpeg');
+      background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
       background-size: 100px 100px;
     }
     .a-davis {
-      background-image: url('../images/head-AD.jpeg');
+      background-image: url('./images/head-AD.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .d-green {
-      background-image: url('../images/head-green.jpeg');
+      background-image: url('./images/head-green.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .d-howard {
-      background-image: url('../images/head-dwight.png');
+      background-image: url('./images/head-dwight.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .kcp {
-      background-image: url('../images/head-kcp.png');
+      background-image: url('./images/head-kcp.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .kuz {
-      background-image: url('../images/head-kuz.jpeg');
+      background-image: url('./images/head-kuz.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .lebron {
-      background-image: url('../images/head-lebron.jpeg');
+      background-image: url('./images/head-lebron.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .mcgee {
-      background-image: url('../images/head-McGEE.png');
+      background-image: url('./images/head-McGEE.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .rondo {
-      background-image: url('../images/head-rondo.png');
+      background-image: url('./images/head-rondo.png');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
     .a-caruso {
-      background-image: url('../images/head-caruso.jpeg');
+      background-image: url('./images/head-caruso.jpeg');
       background-size: 100px 100px;
       background-repeat: no-repeat;
     }
