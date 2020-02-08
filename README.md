@@ -21,7 +21,7 @@ Link: https://lakers-memory-match.timothywlee.com
 * Users can see their accuracy after the game is completed
 
 # Preview
-![preview image](lakers-memory-match-preview.gif)
+![preview image](lakers-memory-match-preview-final.gif)
 
 ## Getting Started
 1. Clone the repository.
