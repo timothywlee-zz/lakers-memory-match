@@ -10,7 +10,6 @@ Link: https://lakers-memory-match.timothywlee.com
 * jQuery
 * HTML5
 * CSS3
-* Bootstrap 4
 * Media Queries
 * AWS EC2
 
@@ -18,7 +17,7 @@ Link: https://lakers-memory-match.timothywlee.com
 * Users can flip cards that they can potentially match
 * Users can play multiple games
 * Users can keep track of stats 
-* Users can see their accuracy after the game is completed
+* Users can see their accuracy during the game
 
 # Preview
 ![preview image](lakers-memory-match-preview-final.gif)
