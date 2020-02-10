@@ -170,9 +170,7 @@ header {
   transform: translateY(0);
   text-align: center;
   color: #fdba21;
-  position: absolute;
-  top: 10%;
-  left: 35%;
+  padding: 5% 0%;
 }
 
 .resetClick:hover {
@@ -265,11 +263,15 @@ header {
     .begModalText{
       font-size: 30px;
     }
+    .modalContainer{
+      height: 200px;
+      width: 300px;
+    }
     .card-back{
       background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
-      background-size: 100px 100px;
+      background-size: 200%;
     }
     .a-davis {
       background-image: url('./images/head-AD.jpeg');
@@ -334,6 +336,10 @@ header {
     .number{
       font-size: 20px;
     }
+    .modalContainer{
+      height: 200px;
+      width: 300px;
+    }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -376,11 +382,15 @@ header {
     .begModalText{
       font-size: 40px;
     }
+    .modalContainer{
+      height: 200px;
+      width: 300px;
+    }
     .card-back{
       background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
-      background-size: 100px 100px;
+      background-size: 200%;
     }
     .a-davis {
       background-image: url('./images/head-AD.jpeg');
@@ -445,6 +455,10 @@ header {
     .number{
       font-size: 17px;
     }
+    .modalContainer{
+      height: 200px;
+      width: 300px;
+    }
 }
 
 
@@ -492,7 +506,7 @@ header {
       background-image: url('./images/basketball.jpeg');
       background-repeat: no-repeat;
       border-radius: 4%;
-      background-size: 200px 175px;
+      background-size: 200%;
     }
     .a-davis {
       background-image: url('./images/head-AD.jpeg');
@@ -604,6 +618,10 @@ header {
     }
     .begModalText{
       font-size: 40px;
+    }
+    .modalContainer{
+      height: 200px;
+      width: 300px;
     }
     .card-back{
       background-image: url('./images/basketball.jpeg');
